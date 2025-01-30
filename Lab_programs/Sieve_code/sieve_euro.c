@@ -89,7 +89,7 @@ long cache_friendly_sieve(long n)
         for (long i = 0; i < prime_count; i++)
         {
             long p = primes[i];
-            long start_idx = (window_start + p - 1) / p * p;
+            long start_idx = ((window_start + p - 1) / p) * p;
             for (long j = start_idx; j <= window_end; j += p)
             {
                 segment[j - window_start] = true;
