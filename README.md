@@ -8,13 +8,15 @@ This repository contains lab programs for the Parallel and Distributed Processin
 
 ### Table of Contents
 
-| Program                               | Description                                        | Link to Explanation                                                            |
-| ------------------------------------- | -------------------------------------------------- | ------------------------------------------------------------------------------ |
-| Matrix Multiplication (OpenMP)        | Parallel matrix multiplication using OpenMP        | [Explanation](./Lab_programs/Matrix_mul/Explaination.md)                       |
-| Sieve of Eratosthenes (OpenMP)        | Finding prime numbers using different approaches   | [Explanation](./Lab_programs/Sieve_code/Explaination.md)                       |
-| Monte Carlo Method for PI Calculation | Parallel random sampling for PI approximation      | [Explanation](./Lab_programs/PI_Calculation_using_Monto-Carlo/Explaination.md) |
-| MPI Message Passing                   | Demonstrates MPI-based inter-process communication | [Explanation](./Lab_programs/MPI_message/Explaination.md)                      |
-| Image Processing (OpenMP)             | RGB to modified grayscale conversion in parallel   | [Explanation](./Lab_programs/Image_omp/Explaination.md)                        |
+| Program                               | Description                                         | Link to Explanation                                                            |
+| ------------------------------------- | --------------------------------------------------- | ------------------------------------------------------------------------------ |
+| Matrix Multiplication (OpenMP)        | Parallel matrix multiplication using OpenMP         | [Explanation](./Lab_programs/Matrix_mul/Explaination.md)                       |
+| Sieve of Eratosthenes (OpenMP)        | Finding prime numbers using different approaches    | [Explanation](./Lab_programs/Sieve_code/Explaination.md)                       |
+| Monte Carlo Method for PI Calculation | Parallel random sampling for PI approximation       | [Explanation](./Lab_programs/PI_Calculation_using_Monto-Carlo/Explaination.md) |
+| MPI Message Passing                   | Demonstrates MPI-based inter-process communication  | [Explanation](./Lab_programs/MPI_message/Explaination.md)                      |
+| Image Processing (OpenMP)             | RGB to modified grayscale conversion in parallel    | [Explanation](./Lab_programs/Image_omp/Explaination.md)                        |
+| Word Search (OpenMP)                  | Parallel word search in a mixture of sentences      | [Explanation](./Lab_programs/Wordsearch/Explaination.md)                       |
+| Dynamic Memory Allocation (OpenMP)    | Parallel matrix multiplication using dynamic memory | [Explanation](./Lab_programs/DynamicMemAlloc_MatMul/Explaination.md)           |
 
 ### Prerequisites
 
