@@ -1,0 +1,6 @@
+apple banana cherry
+Apple BANANA Cherry
+elderberry fig grape
+honeydew Kiwi lemon
+mango nectarine orange
+Some random text with APPLE and banana mixed in with elderberryfig
