@@ -63,6 +63,20 @@ gcc -fopenmp image_omp.c -o image_omp -lgd
 ./image_omp input.png output.png
 ```
 
+6. **Word Search (OpenMP)**
+
+```bash
+gcc -fopenmp wordsearch.c -o wordsearch
+./wordsearch
+```
+
+7. **Dynamic Memory Allocation (OpenMP)**
+
+```bash
+gcc -fopenmp dynamic_mem_alloc_matmul.c -o dynamic_mem_alloc_matmul
+./dynamic_mem_alloc_matmul
+```
+
 ### Usage Instructions
 
 - For matrix multiplication, adjust row/column values directly in the code if needed.
@@ -70,6 +84,8 @@ gcc -fopenmp image_omp.c -o image_omp -lgd
 - For Monte Carlo PI, pass the number of random points as a command line argument or enter interactively.
 - For MPI message passing, ensure mpirun -np <num_procs> is used, with <num_procs> matching your setup.
 - For image processing, provide input/output filenames and optionally tweak scheduling parameters.
+- For word search, you need to keep an input text file named `words.txt` in the same directory. It should have a list of sentences separated by newlines.
+- For dynamic memory allocation, adjust matrix size as needed. We actually need `nvc` compiler to run this program. So with GCC it's kind of redundant.
 
 ### References
 
