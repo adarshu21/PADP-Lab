@@ -124,7 +124,7 @@ int main(int argc, char *argv[])
 
                 double time = process_image(input_file, output_file, num_threads, schedules[j], chunk_sizes[k]);
 
-                printf("%dx%d\t%s\t\t%d\t%.4f\n", sizes[i], sizes[i], schedules[j], chunk_sizes[k], time);
+                printf("%dx%d\t%s\t\t%d\t%.6f\n", sizes[i], sizes[i], schedules[j], chunk_sizes[k], time);
             }
         }
     }

@@ -1,9 +1,9 @@
 #include <sys/time.h>
 #include <stdio.h>
-// #include <openacc.h>
+#include <openacc.h>
 // To actually run this on gpu we need to compile it with nvidia hpc sdk
 
-#define SIZE 100
+#define SIZE 1000
 
 double A[SIZE][SIZE], B[SIZE][SIZE], C[SIZE][SIZE], D[SIZE][SIZE];
 
@@ -13,8 +13,8 @@ int main()
     struct timeval time;
     double t1, t2;
     double temp;
-    // printf("OpenACC device type: %s\n", acc_get_device_type() == acc_device_nvidia ? "NVIDIA GPU" : "Host/CPU");
-    // printf("Number of OpenACC devices: %d\n", acc_get_num_devices(acc_device_nvidia));
+    printf("OpenACC device type: %s\n", acc_get_device_type() == acc_device_nvidia ? "NVIDIA GPU" : "Host/CPU");
+    printf("Number of OpenACC devices: %d\n", acc_get_num_devices(acc_device_nvidia));
 
     // Initialize matrices A and B
     for (i = 0; i < SIZE; i++)
@@ -61,6 +61,8 @@ int main()
     // Print the time taken
     printf("Time: %f seconds taken by OpenACC\n", t2 - t1);
 
+    gettimeofday(&time, NULL);
+    t1 = time.tv_sec + time.tv_usec / 1000000.0;
     // Cross check the result by multiplying A and B
     for (i = 0; i < SIZE; i++)
     {
@@ -74,7 +76,8 @@ int main()
             D[i][j] = temp;
         }
     }
-
+    gettimeofday(&time, NULL);
+    t2 = time.tv_sec + time.tv_usec / 1000000.0;
     // Compare the two results
     for (i = 0; i < SIZE; i++)
     {
@@ -87,6 +90,7 @@ int main()
             }
         }
     }
+    printf("Time: %f seconds taken by CPU\n", t2 - t1);
 
     printf("Matrix multiplication successful\n");
     return 0;

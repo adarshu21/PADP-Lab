@@ -144,3 +144,12 @@ Enter the number of iterations (recommend 10K+): 100000000000
 | 8             | 1215752192     | 3.141619      | 2.280567         |
 +---------------+----------------+---------------+------------------+
 ```
+
+---
+
+## MPI Implementation
+
+```bash
+mpicc -o mpi_pi_calc mpi_pi_calc.c
+mpirun -np 4 ./mpi_pi_calc
+```

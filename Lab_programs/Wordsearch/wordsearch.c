@@ -62,7 +62,7 @@ void read_word(char *temp, FILE *fp)
 
     // Read word
     temp[i++] = ch;
-    while ((ch = fgetc(fp)) != EOF && is_alpha(ch))
+    while ((ch = fgetc(fp)) != EOF && is_alpha(ch) && i < 39)
     {
         temp[i++] = ch;
     }

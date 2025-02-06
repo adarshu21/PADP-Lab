@@ -94,16 +94,16 @@ gcc -fopenmp image_omp.c -o image_proc -lgd
 Performance Results (Time in seconds)
 =====================================
 Size    Schedule        Chunk   Time
-512x512 static          1       0.0081
-512x512 static          10      0.0082
-512x512 static          50      0.0073
-512x512 static          100     0.0087
-512x512 dynamic         1       0.0087
-512x512 dynamic         10      0.0080
-512x512 dynamic         50      0.0056
-512x512 dynamic         100     0.0061
-512x512 guided          1       0.0070
-512x512 guided          10      0.0052
-512x512 guided          50      0.0049
-512x512 guided          100     0.0075
+512x512 static          1       0.007814
+512x512 static          10      0.005296
+512x512 static          50      0.004720
+512x512 static          100     0.005632
+512x512 dynamic         1       0.006901
+512x512 dynamic         10      0.006104
+512x512 dynamic         50      0.004669
+512x512 dynamic         100     0.004690
+512x512 guided          1       0.004686
+512x512 guided          10      0.004267
+512x512 guided          50      0.003198
+512x512 guided          100     0.003128
 ```
